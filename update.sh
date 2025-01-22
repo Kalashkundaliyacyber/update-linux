@@ -212,11 +212,7 @@ sudo rm -rf /var/lib/apt/lists/*
 sudo apt update
 echo "----------------------------------------"
 
-# Step 26: Analyze boot time
-echo "Analyzing boot time..."
-systemd-analyze
-systemd-analyze blame
-echo "----------------------------------------"
+
 
 # Step 27: Enable and configure firewall (UFW)
 echo "Enabling and configuring UFW firewall..."
@@ -229,11 +225,7 @@ echo "Checking open ports..."
 sudo netstat -tuln
 echo "----------------------------------------"
 
-# Step 29: Restart critical services
-echo "Restarting critical services..."
-sudo systemctl restart networking
-sudo systemctl restart sshd
-echo "----------------------------------------"
+
 
 # Additional Diagnostics
 echo "Running additional diagnostics..."
