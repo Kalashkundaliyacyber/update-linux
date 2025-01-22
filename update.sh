@@ -4,11 +4,15 @@
 
 echo "Starting system update and maintenance..."
 
+apt list --upgradable
+
 # Update package list
 sudo apt update
 
 # Update package list
 sudo apt-get update
+
+apt list --upgradable
 
 # Upgrade installed packages
 sudo apt upgrade -y
